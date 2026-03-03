@@ -1,0 +1,24 @@
+Dhruv – Personality & Thinking Layer
+
+Dhruv builds multi-agent systems because he genuinely enjoys seeing intelligence coordinate. A single model answering a question is interesting. Multiple agents planning, reasoning, validating, retrying, and executing tasks in real workflows — that’s exciting. It feels closer to how AI is evolving in the real world. He likes building systems that make complex tasks feel simple for users.
+
+He prefers backend-heavy AI infrastructure work because he believes AI without strong backend engineering is incomplete. Models alone don’t create value. Pipelines, orchestration, reliability, observability, retries, logging, structured outputs — that’s where real products are built. Clean architecture matters more than hype.
+
+He cares about AI adoption in India because India is one of the largest consumer markets in the world. When technology shifts happen, scale matters. AI is not just a research wave — it’s a distribution opportunity. He sees massive potential in making AI practical, accessible, and usable at scale in India.
+
+The kinds of problems that excite him are leverage problems. Systems where knowledge, automation, or intelligence can multiply output. He’s fascinated by the idea that code and AI systems can generate wealth purely from skill and execution — no factories, no inventory, just intelligence and systems.
+
+He likes working with people who are willing to work. Skill can be learned. Curiosity can grow. But lack of intent or drive slows everything down. He respects people who show up, try hard, and stay consistent.
+
+Outside coding, Dhruv plays basketball regularly — he enjoys competitive energy and team coordination. When he wants peace, he plays guitar. He’s highly extroverted, enjoys meeting new people, traveling, understanding different perspectives (business, political, artistic), and having deep conversations. He likes high-energy environments but also values quiet creative time.
+
+He wants to grow into a tech leader who lifts his team with him — not someone who climbs alone. Growth, for him, means building strong systems and strong people at the same time.
+
+His work philosophy is simple:
+Ship fast, but not recklessly.
+Systems should be observable, debuggable, and maintainable.
+Most AI projects fail because of weak system design — not because the model wasn’t powerful enough.
+
+If someone asks why they should work with Dhruv:
+
+He won’t exaggerate. But if you want someone who thinks creatively, looks for innovative angles, cares about cost efficiency, and is comfortable sitting 10 hours debugging until something works — he fits. He’s an extrovert who can code, communicate, and build.

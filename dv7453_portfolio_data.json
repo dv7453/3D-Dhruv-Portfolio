@@ -1,0 +1,309 @@
+[
+  {
+    "name": "OrchestrAI",
+    "url": "https://github.com/dv7453/OrchestrAI",
+    "summary": "OrchestrAI is a cutting-edge, multi-agent web automation system that leverages natural language queries to execute browser automation steps, featuring a natural language interface, universal website support, and vision-enhanced element selection, built with a LangGraph architecture, Groq LLM, and a tech stack including Python, JavaScript, and HTML/CSS. It enables users to automate tasks on any website via a user-friendly chatbot interface. The system combines the power of machine learning and computer vision to provide reliable and efficient automation.",
+    "tech_stack": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Playwright",
+      "FastAPI",
+      "WebSocket",
+      "Groq LLM"
+    ]
+  },
+  {
+    "name": "SpeechEval-AI",
+    "url": "https://github.com/dv7453/SpeechEval-AI",
+    "summary": "SpeechEval-AI is an EdTech platform that evaluates speech performance across four critical dimensions: pronunciation, fluency, confidence, and accuracy, utilizing a hybrid AI architecture for real-time analysis and actionable feedback. The platform features a 4-metric evaluation system, statistical benchmarking, and interview coaching. It leverages advanced automated metrics and AI-driven content analysis.",
+    "tech_stack": [
+      "TypeScript",
+      "Python",
+      "JavaScript",
+      "CSS",
+      "Docker",
+      "Shell",
+      "Jupyter Notebook",
+      "Whisper",
+      "LLM"
+    ]
+  },
+  {
+    "name": "LLM-Data-Pipeline",
+    "url": "https://github.com/dv7453/LLM-Data-Pipeline",
+    "summary": "A Python-based web data extraction pipeline designed to ingest clean, structured data for Large Language Models, tackling challenging sources like JavaScript-rendered dashboards, complex HTML tables, and visual charts. The pipeline features a DOM-first adaptive extraction strategy, utilizing headless browsers and direct HTTP fetching. It leverages a robust tech stack to deliver normalized, LLM-ready JSON output.",
+    "tech_stack": [
+      "Python",
+      "Playwright",
+      "pandas",
+      "HTTP"
+    ]
+  },
+  {
+    "name": "AgentLoopEngine",
+    "url": "https://github.com/dv7453/AgentLoopEngine",
+    "summary": "The AgentLoopEngine is a minimal async workflow engine built with Python, featuring async nodes, simple branching, and looping, all while utilizing FastAPI for endpoint creation. Its purpose is to provide a clean and student-friendly workflow/graph engine with per-node execution logs and in-memory storage. The engine is designed to operate with a shared state, utilizing Pydantic for typed models.",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "Pydantic",
+      "JavaScript",
+      "PowerShell",
+      "Shell",
+      "Graphviz",
+      "Uvicorn"
+    ]
+  },
+  {
+    "name": "PyDanic-ROASTMYSTARTUP",
+    "url": "https://github.com/dv7453/PyDanic-ROASTMYSTARTUP",
+    "summary": "PyDanic-ROASTMYSTARTUP appears to be a full-stack web application leveraging TypeScript, Python, and JavaScript for backend and frontend development, with Docker and Procfile indicating containerization and deployment capabilities. The project likely utilizes a microservices architecture, given the presence of multiple languages and a Procfile. It seems to be designed for scalability and ease of deployment.",
+    "tech_stack": [
+      "TypeScript",
+      "Python",
+      "JavaScript",
+      "CSS",
+      "Docker",
+      "Procfile"
+    ]
+  },
+  {
+    "name": "Natural_language_query",
+    "url": "https://github.com/dv7453/Natural_language_query",
+    "summary": "Natural language query processing is enabled through JavaScript, facilitating user-friendly interactions with data. The system likely interprets and executes queries based on natural language inputs, providing an intuitive interface for information retrieval. Key functionality includes parsing and understanding natural language queries to generate relevant results.",
+    "tech_stack": [
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "DANS-MultiAgent-StartUp-Guidance",
+    "url": "https://github.com/dv7453/DANS-MultiAgent-StartUp-Guidance",
+    "summary": "DANS-MultiAgent-StartUp-Guidance generates comprehensive startup reports and facilitates interactive Q&A using Groq models via LangChain, featuring a Streamlit UI, conversation memory, and local storage. The application leverages a Python-based tech stack and integrates with Groq LLM for advanced report generation. It provides a robust platform for startup guidance and report analysis.",
+    "tech_stack": [
+      "Python",
+      "Streamlit",
+      "LangChain",
+      "Groq",
+      "PyYAML"
+    ]
+  },
+  {
+    "name": "Digital_Twin_Power_Plant",
+    "url": "https://github.com/dv7453/Digital_Twin_Power_Plant",
+    "summary": "Digital Twin Power Plant is a predictive modeling application that utilizes machine learning to forecast energy production for gas and steam power plants. The application provides custom prediction endpoints for gas and steam, allowing users to input specific parameters for tailored predictions. Key functionality includes data-driven predictions and real-time output.",
+    "tech_stack": [
+      "Flask",
+      "Python",
+      "joblib",
+      "pandas",
+      "numpy",
+      "three.js",
+      "Vite"
+    ]
+  },
+  {
+    "name": "TWC_OMS",
+    "url": "https://github.com/dv7453/TWC_OMS",
+    "summary": "The Organization Management Service is a multi-tenant backend built with FastAPI and MongoDB, featuring async operations, JWT authentication, and dynamic collection management. It provides endpoints for organization creation, retrieval, update, and deletion, as well as admin login functionality. The service is designed to be scalable and secure, utilizing a tech stack that includes Python, Docker, and MongoDB.",
+    "tech_stack": [
+      "Python",
+      "Docker",
+      "FastAPI",
+      "MongoDB",
+      "Pydantic",
+      "Uvicorn",
+      "pytest",
+      "httpx",
+      "python-jose",
+      "passlib"
+    ]
+  },
+  {
+    "name": "VentureGPT",
+    "url": "https://github.com/dv7453/VentureGPT",
+    "summary": "VentureGPT generates comprehensive reports for startup ideas, providing legal, economic, and business structure analyses. It utilizes a multi-agent approach, where each agent processes user input to produce a specific analysis, which is then compiled into a comprehensive report. The project also features a chat interface, allowing users to ask questions about the report and receive answers generated by a conversational AI model.",
+    "tech_stack": [
+      "Python",
+      "Streamlit",
+      "Langchain",
+      "Groq",
+      "OpenAI",
+      "YAML",
+      "Dotenv",
+      "JSON"
+    ]
+  },
+  {
+    "name": "rust-log-analyzer",
+    "url": "https://github.com/dv7453/rust-log-analyzer",
+    "summary": "The rust-log-analyzer is a lightweight command-line tool that efficiently processes log files, parsing standard log lines, extracting severity levels, and allowing filtering and searching capabilities. Built with Rust, it leverages streaming to handle large files with a minimal footprint. Its key features include log level extraction, occurrence counting, and keyword searching.",
+    "tech_stack": [
+      "Rust",
+      "Cargo"
+    ]
+  },
+  {
+    "name": "Mesh-Normalization-Quantization-and-Error-Analysis",
+    "url": "https://github.com/dv7453/Mesh-Normalization-Quantization-and-Error-Analysis",
+    "summary": "End-to-end 3D mesh preprocessing pipeline for downstream ML tasks, featuring Min-Max and Unit Sphere normalization, 1024-bin quantization, and error analysis with MSE/MAE plots. The pipeline is built with a Python stack and includes a seam tokenization prototype for discrete token modeling. It provides an extensible framework for mesh preprocessing and analysis.",
+    "tech_stack": [
+      "Python",
+      "trimesh",
+      "open3d"
+    ]
+  },
+  {
+    "name": "drop2ml-",
+    "url": "https://github.com/dv7453/drop2ml-",
+    "summary": "Drop2ml enables users to train machine learning models by simply dragging and dropping datasets, streamlining the model development process. Key functionality includes automated data preprocessing and model selection. The project aims to simplify machine learning workflows for non-technical users.",
+    "tech_stack": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "TensorFlow",
+      "Flask"
+    ]
+  },
+  {
+    "name": "fake-Job-Chrome-extension",
+    "url": "https://github.com/dv7453/fake-Job-Chrome-extension",
+    "summary": "The Fake Job Detector Chrome Extension leverages AI, ML, and NLP to detect deceptive job listings on Naukri.com, providing users with real-time risk scores, alerts, and transparency. It features a robust tech stack, including a React.js frontend, Flask/FastAPI backend, and ML/NLP models like Random Forest, SVM, and BERT. The extension empowers users with crowdsourced feedback, adaptive learning, and anomaly detection.",
+    "tech_stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Flask",
+      "FastAPI",
+      "Python",
+      "Scikit-learn",
+      "TensorFlow",
+      "BERT",
+      "Word2Vec",
+      "FastText",
+      "TF-IDF",
+      "Pandas",
+      "NumPy",
+      "BeautifulSoup",
+      "Selenium",
+      "MongoDB",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Proof-ETP",
+    "url": "https://github.com/dv7453/Proof-ETP",
+    "summary": "Proof-ETP provides a robust framework for efficient transaction processing, leveraging advanced algorithms and data structures to optimize performance. Key functionality includes secure data handling and high-speed transaction validation. The system ensures reliable and efficient processing of transactions.",
+    "tech_stack": [
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js"
+    ]
+  },
+  {
+    "name": "ai-intent-explorer",
+    "url": "https://github.com/dv7453/ai-intent-explorer",
+    "summary": "The ai-intent-explorer is a cutting-edge application built to explore AI intents, featuring a robust tech stack and seamless development experience. With its intuitive interface and auto-reloading capabilities, developers can efficiently edit and deploy the project. By leveraging Vite, TypeScript, and React, the project delivers a scalable and maintainable solution.",
+    "tech_stack": [
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Vite",
+      "React",
+      "shadcn-ui",
+      "Tailwind CSS",
+      "Node.js"
+    ]
+  },
+  {
+    "name": "skill-pathways-guide",
+    "url": "https://github.com/dv7453/skill-pathways-guide",
+    "summary": "The skill-pathways-guide repository appears to be a web application built with React, utilizing various Radix UI components and libraries like React Query and Tailwind CSS for styling. It likely provides an interactive interface for users to explore and navigate through different skill pathways. The application is developed with a focus on modern web development practices, including TypeScript and ESLint for code quality.",
+    "tech_stack": [
+      "React",
+      "TypeScript",
+      "Radix UI",
+      "Tailwind CSS",
+      "Vite",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "name": "Narrative-Transformer",
+    "url": "https://github.com/dv7453/Narrative-Transformer",
+    "summary": "Transforming classic narratives into new settings, the Narrative-Transformer pipeline preserves structural and thematic integrity using a Python-based stack. It features narrative invariant extraction, character values vs world constraints mapping, and failure modes as narrative pressure. The pipeline executes a linear flow from input parsing to narrative generation, ensuring dramatic tension and consistency.",
+    "tech_stack": [
+      "Python"
+    ]
+  },
+  {
+    "name": "TuneNTales",
+    "url": "https://github.com/dv7453/TuneNTales",
+    "summary": "TuneNTales revolutionizes storytelling by integrating advanced generative AI technologies, including transformers and large language models, to create immersive narratives with synchronized visuals and music. The project features dynamic storytelling, enhanced user engagement, and potential applications in education and cultural exchange. Built with Jupyter Notebook, it leverages state-of-the-art AI tools for natural language processing.",
+    "tech_stack": [
+      "Jupyter Notebook",
+      "Transformers",
+      "SentencePiece",
+      "Large Language Models"
+    ]
+  },
+  {
+    "name": "Active_Crash_Detection_and_Alarming_System_main",
+    "url": "https://github.com/dv7453/Active_Crash_Detection_and_Alarming_System_main",
+    "summary": "Active Crash Detection and Alarming System enhances vehicular safety by detecting potential collisions and alerting drivers and emergency services in real-time, featuring real-time crash detection, emergency notification, and data logging. Built with Python, the system provides a scalable and reliable safety mechanism for vehicles. It integrates multiple sensors and offers a user-friendly dashboard for configuration and monitoring.",
+    "tech_stack": [
+      "Python"
+    ]
+  },
+  {
+    "name": "Facial_expression_recognition_Using_CNN",
+    "url": "https://github.com/dv7453/Facial_expression_recognition_Using_CNN",
+    "summary": "Facial Expression Recognition using Convolutional Neural Networks (CNNs) aims to classify human emotions from facial images, leveraging a robust architecture with convolutional, pooling, and fully connected layers. The model utilizes the FER-2013 dataset and is trained using the Adam optimizer and categorical cross-entropy loss. Built with Python, this project showcases a deep learning approach to computer vision tasks.",
+    "tech_stack": [
+      "Python",
+      "CNN",
+      "Keras",
+      "TensorFlow"
+    ]
+  },
+  {
+    "name": "Intel-Image-Classification-CNN",
+    "url": "https://github.com/dv7453/Intel-Image-Classification-CNN",
+    "summary": "Developed a machine learning model for image classification using Convolutional Neural Networks, featuring data augmentation and categorical cross-entropy loss function, to accurately categorize images into six classes. The model utilizes a robust architecture with convolutional, pooling, and fully connected layers. Built using Jupyter Notebook, the project showcases expertise in deep learning and image processing.",
+    "tech_stack": [
+      "Python",
+      "Jupyter Notebook",
+      "Convolutional Neural Network (CNN)",
+      "Keras",
+      "TensorFlow"
+    ]
+  },
+  {
+    "name": "Semantic_Segmention_with_Pytorch",
+    "url": "https://github.com/dv7453/Semantic_Segmention_with_Pytorch",
+    "summary": "Semantic segmentation is achieved through a PyTorch implementation, utilizing a U-Net architecture for pixel-level image classification. The project features data preprocessing, model architecture design, and loss function implementation for accurate segmentation. It leverages PyTorch for deep learning tasks, focusing on computer vision applications.",
+    "tech_stack": [
+      "PyTorch",
+      "Jupyter Notebook"
+    ]
+  },
+  {
+    "name": "ISRO-IEEE-GRS-Hackathon",
+    "url": "https://github.com/dv7453/ISRO-IEEE-GRS-Hackathon",
+    "summary": "Developing AI models for remote sensing using AWS SageMaker, leveraging Jupyter Notebook for data-driven insights and TerraTorch for foundation models. The project features a comprehensive guide for setup, training, and evaluation, utilizing a dataset and workshop for participant training. It showcases expertise in cloud-based AI application development and remote sensing.",
+    "tech_stack": [
+      "Jupyter Notebook",
+      "AWS SageMaker",
+      "TerraTorch",
+      "Python",
+      "albumentations",
+      "ffmpeg"
+    ]
+  }
+]

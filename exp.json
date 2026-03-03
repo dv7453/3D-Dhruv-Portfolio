@@ -1,0 +1,23 @@
+[
+    {
+    "title": "Project Intern (IoT Systems)",
+    "organization": "Aliste Technologies",
+    "location": "Ahmedabad, Gujarat, India (On-site)",
+    "timeline": "Jun 2023 - Sep 2023",
+    "description": "Developed and integrated Bluetooth-enabled IoT systems using NodeMCU ESP32 boards. Worked on firmware-level code integration and device communication pipelines. Built foundational embedded systems skills during early undergraduate training before large-scale LLM adoption."
+  },
+  {
+    "title": "AI & ML Summer Intern",
+    "organization": "Teksun Microsys Inc",
+    "location": "Ahmedabad, Gujarat, India (On-site)",
+    "timeline": "Jun 2024 - Jul 2024",
+    "description": "Trained on image and audio ML pipelines before contributing to a surround-sound IoT demo project. Built secure ML inference workflows integrating MQTT-based communication for IoT devices. Focused on audio feature extraction, model optimization, and secure real-time deployment on constrained hardware environments."
+  },
+  {
+    "title": "AI Research Intern",
+    "organization": "LanguageLoop Technologies Pvt Ltd",
+    "location": "Mumbai, Maharashtra, India (Remote)",
+    "timeline": "Jul 2024 - Oct 2024",
+    "description": "Worked on embedding-based analytics and app-level optimization across diverse client tech stacks including COBOL, Perl, and Objective-C systems. Conducted feasibility studies for LLM and RAG-based integration into legacy architectures. Contributed to product-level improvements through code intelligence and embedding pipelines."
+  }
+]
