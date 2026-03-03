@@ -157,7 +157,7 @@ export default function Overlay({ scrollProgress, graphProgress, appLoaded }) {
               <span className="cta-arrow">→</span>
             </a>
             <button className="hero-cta hero-cta--secondary" onClick={() => {
-              fetch('/AIDhruvResume.pdf')
+              fetch('/aidhruvresume.pdf')
                 .then(r => r.blob())
                 .then(blob => {
                   const url = URL.createObjectURL(blob);
