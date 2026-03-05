@@ -6,64 +6,87 @@ const mapRange = (v, a, b, c, d) => c + clamp((v - a) / (b - a), 0, 1) * (d - c)
 
 // ── Stat counter data ──
 const STATS = [
-  { value: 1,  suffix: '',  label: 'Revenue-Generating Company' },
-  { value: 7,  suffix: '+', label: 'Clients' },
-  { value: 25, suffix: '+', label: 'Systems Built' },
+  { value: 1, suffix: '', label: 'Revenue-Generating Company', icon: '◆' },
+  { value: 7, suffix: '+', label: 'Clients Served', icon: '◈' },
+  { value: 25, suffix: '+', label: 'Systems Built', icon: '▣' },
 ];
 
-export default function Overlay({ scrollProgress }) {
-  const containerRef = useRef();
+export default function Overlay({ scrollProgress, graphProgress, appLoaded }) {
+  const heroRef = useRef();
   const scrollHintRef = useRef();
-  const ctaRef = useRef();
   const statsRef = useRef();
+  const footerRef = useRef();
   const statsAnimated = useRef(false);
 
-  // ── GSAP entrance animation for hero text ──
+  // ── GSAP entrance animation ──
   useEffect(() => {
-    const els = containerRef.current;
-    if (!els) return;
+    if (!appLoaded) return;
+    const hero = heroRef.current;
+    if (!hero) return;
 
-    const tl = gsap.timeline({ delay: 3.2 });
+    // Small delay to let the black preloader fade out slightly before animating in
+    const tl = gsap.timeline({ delay: 0.5 });
 
+    // Name lines stagger in
     tl.fromTo(
-      els.querySelector('.overlay-name'),
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' }
+      hero.querySelectorAll('.hero-name-line'),
+      { opacity: 0, y: 40, skewY: 3 },
+      { opacity: 1, y: 0, skewY: 0, duration: 1, ease: 'power4.out', stagger: 0.15 }
     )
-    .fromTo(
-      els.querySelector('.overlay-tagline'),
-      { opacity: 0, y: 14 },
-      { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' },
-      '-=0.4'
-    )
-    .fromTo(
-      els.querySelectorAll('.overlay-btn'),
-      { opacity: 0, y: 10 },
-      { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', stagger: 0.12 },
-      '-=0.3'
-    )
-    .fromTo(
-      els.querySelector('.hero-stats'),
-      { opacity: 0, y: 12 },
-      { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
-        onStart: () => animateCounters() },
-      '-=0.2'
-    )
-    .to(
-      scrollHintRef.current,
-      { opacity: 1, duration: 0.5, ease: 'power2.out' },
-      '-=0.1'
-    );
+      // Accent bar slides in
+      .fromTo(
+        hero.querySelector('.hero-accent'),
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.8, ease: 'power3.inOut' },
+        '-=0.5'
+      )
+      // Tagline fades up
+      .fromTo(
+        hero.querySelector('.hero-tagline'),
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' },
+        '-=0.4'
+      )
+      // Personality line
+      .fromTo(
+        hero.querySelector('.hero-personality'),
+        { opacity: 0, y: 14 },
+        { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' },
+        '-=0.3'
+      )
+      // CTA buttons
+      .fromTo(
+        hero.querySelector('.hero-cta-row'),
+        { opacity: 0, y: 16, scale: 0.95 },
+        { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'back.out(1.4)' },
+        '-=0.2'
+      )
+      // Stat cards stagger in from below
+      .fromTo(
+        hero.querySelectorAll('.stat-card'),
+        { opacity: 0, y: 30, scale: 0.92 },
+        {
+          opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out', stagger: 0.12,
+          onStart: () => animateCounters()
+        },
+        '-=0.3'
+      )
+      // Scroll hint
+      .to(
+        scrollHintRef.current,
+        { opacity: 1, duration: 0.5, ease: 'power2.out' },
+        '-=0.1'
+      );
 
     return () => tl.kill();
-  }, []);
+  }, [appLoaded]);
 
   // ── Count-up animation (runs once) ──
   const animateCounters = useCallback(() => {
     if (statsAnimated.current) return;
     statsAnimated.current = true;
 
-    const counters = statsRef.current?.querySelectorAll('.stat-number');
+    const counters = statsRef.current?.querySelectorAll('.stat-value');
     if (!counters) return;
 
     counters.forEach((el, i) => {
@@ -83,68 +106,88 @@ export default function Overlay({ scrollProgress }) {
 
   // ── Scroll-driven overlay updates ──
   useEffect(() => {
-    let raf;
-    const loop = () => {
-      const p = scrollProgress.current;
+    const onScroll = () => {
+      const p = scrollProgress.current; // projectsProgress: 0-1 during projects phase
+      const gp = graphProgress.current; // graphProgress: 0-1 during graph phase
 
-      // Hero fades out on scroll
-      if (containerRef.current) {
-        const heroOp = mapRange(p, 0, 0.08, 1, 0);
-        containerRef.current.style.opacity = heroOp;
+      // Hero fades out as projects section comes in
+      if (heroRef.current) {
+        const heroOp = mapRange(p, 0, 0.3, 1, 0);
+        heroRef.current.style.opacity = heroOp;
+        heroRef.current.style.transform = `translateY(${(1 - heroOp) * -30}px)`;
       }
 
       // Scroll hint fades out
       if (scrollHintRef.current) {
-        const hintOp = mapRange(p, 0.01, 0.04, 1, 0);
+        const hintOp = mapRange(p, 0, 0.15, 1, 0);
         scrollHintRef.current.style.opacity = Math.min(
           hintOp,
           parseFloat(scrollHintRef.current.style.opacity) || 0
         ) || hintOp;
       }
 
-      // CTA
-      if (ctaRef.current) {
-        const ctaOp = mapRange(p, 0.88, 0.96, 0, 1);
-        ctaRef.current.style.opacity = ctaOp;
-        ctaRef.current.style.transform = `translate(-50%, -50%) translateY(${(1 - ctaOp) * 20}px)`;
+      // Minimal footer fades in at the very end of the graph section
+      if (footerRef.current) {
+        const footerOp = mapRange(gp, 0.92, 1.0, 0, 1);
+        footerRef.current.style.opacity = footerOp;
+        footerRef.current.style.transform = `translateY(${(1 - footerOp) * 20}px) translateX(-50%)`;
       }
-
-      raf = requestAnimationFrame(loop);
     };
-    raf = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(raf);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
     <>
-      {/* Hero */}
-      <div ref={containerRef} className="overlay-container">
-        <h1 className="overlay-name">Dhruv Vadhiya</h1>
-        <p className="overlay-tagline">an extrovert who can code</p>
+      {/* ── Hero Section ── */}
+      <div ref={heroRef} className="hero-section">
+        {/* Left content */}
+        <div className="hero-content">
 
-        {/* Animated stats */}
-        <div ref={statsRef} className="hero-stats">
-          {STATS.map((stat, i) => (
-            <React.Fragment key={stat.label}>
-              {i > 0 && <span className="stat-divider" />}
-              <div className="stat-item">
-                <span className="stat-number">0{stat.suffix}</span>
-                <span className="stat-label">{stat.label}</span>
-              </div>
-            </React.Fragment>
-          ))}
+          <h1 className="hero-name">
+            <span className="hero-name-line">DHRUV</span>
+            <span className="hero-name-line">VADHIYA</span>
+          </h1>
+          <div className="hero-accent" />
+          <p className="hero-tagline">AI + Backend Engineer</p>
+          <p className="hero-personality">The extrovert who can code</p>
+          <div className="hero-cta-row">
+            <a className="hero-cta" href="mailto:dhruvvadhiya1@gmail.com">
+              <span className="cta-text">Get In Touch</span>
+              <span className="cta-arrow">→</span>
+            </a>
+            <button className="hero-cta hero-cta--secondary" onClick={() => {
+              fetch('/aidhruvresume.pdf')
+                .then(r => r.blob())
+                .then(blob => {
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = 'Dhruv_Vadhiya_Resume.pdf';
+                  document.body.appendChild(a);
+                  a.click();
+                  a.remove();
+                  URL.revokeObjectURL(url);
+                });
+            }}>
+              <span className="cta-text">Resume</span>
+              <span className="cta-arrow">↓</span>
+            </button>
+          </div>
         </div>
 
-        <div className="overlay-buttons">
-          <a className="overlay-btn" href="https://github.com/dv7453" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a className="overlay-btn" href="#" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a className="overlay-btn" href="mailto:dhruv@example.com">
-            Contact
-          </a>
+        {/* Stat cards — bottom podium */}
+        <div ref={statsRef} className="stat-cards">
+          {STATS.map((stat, i) => (
+            <div
+              key={stat.label}
+              className={`stat-card ${i === 1 ? 'stat-card--featured' : ''}`}
+            >
+              <span className="stat-icon">{stat.icon}</span>
+              <span className="stat-value">0{stat.suffix}</span>
+              <span className="stat-label">{stat.label}</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -156,13 +199,13 @@ export default function Overlay({ scrollProgress }) {
         <span className="scroll-label">scroll to explore</span>
       </div>
 
-      {/* Final CTA */}
-      <div ref={ctaRef} className="cta-overlay" style={{ opacity: 0 }}>
-        <h2 className="cta-heading">Let&apos;s build something</h2>
-        <div className="cta-links">
+      {/* Minimal Footer */}
+      <div ref={footerRef} className="minimal-footer" style={{ opacity: 0 }}>
+        <p>© 2025 Dhruv Vadhiya. Crafted with intention.</p>
+        <div className="footer-links">
+          <a href="mailto:dhruvvadhiya1@gmail.com">Email</a>
           <a href="https://github.com/dv7453" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:dhruv@example.com">Email</a>
+          <a href="https://www.linkedin.com/in/dhruv-vadhiya/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </>
