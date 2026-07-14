@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import projectsData from '../dv7453_portfolio_data.json';
 
-const FEATURED = ['OrchestrAI', 'SpeechEval-AI', 'LLM-Data-Pipeline'];
+const FEATURED = ['OrchestrAI', 'Voice-Talk-to-Founder', 'SpeechEval-AI'];
 
 // Build unique category tags from all projects
 const ALL_CATEGORIES = [
@@ -10,7 +10,7 @@ const ALL_CATEGORIES = [
     { label: 'Deep Learning', value: 'dl', match: ['TensorFlow', 'PyTorch', 'Keras', 'CNN', 'Convolutional Neural Network (CNN)', 'SentencePiece'] },
     { label: 'Backend', value: 'backend', match: ['FastAPI', 'Flask', 'Node.js', 'Uvicorn', 'MongoDB', 'PostgreSQL', 'Docker'] },
     { label: 'Frontend', value: 'frontend', match: ['React', 'React.js', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn-ui', 'Radix UI', 'three.js'] },
-    { label: 'Data', value: 'data', match: ['pandas', 'Pandas', 'numpy', 'NumPy', 'Jupyter Notebook', 'scikit-learn', 'Scikit-learn', 'Graphviz'] },
+    { label: 'Data', value: 'data', match: ['pandas', 'Pandas', 'numpy', 'NumPy', 'Jupyter Notebook', 'scikit-learn', 'Scikit-learn', 'Graphviz', 'LightGBM', 'Isolation Forest', 'joblib'] },
     { label: 'Rust', value: 'rust', match: ['Rust', 'Cargo'] },
 ];
 

@@ -2,16 +2,38 @@
   {
     "name": "OrchestrAI",
     "url": "https://github.com/dv7453/OrchestrAI",
-    "summary": "OrchestrAI is a cutting-edge, multi-agent web automation system that leverages natural language queries to execute browser automation steps, featuring a natural language interface, universal website support, and vision-enhanced element selection, built with a LangGraph architecture, Groq LLM, and a tech stack including Python, JavaScript, and HTML/CSS. It enables users to automate tasks on any website via a user-friendly chatbot interface. The system combines the power of machine learning and computer vision to provide reliable and efficient automation.",
+    "summary": "OrchestrAI is an AI-powered browser automation platform that converts natural language instructions into reliable web workflows using a LangGraph state machine. The system plans, executes, evaluates, and retries browser actions through a 15-node orchestration graph built on browser-use and Playwright, while streaming live screenshots and execution progress to an interactive web UI. It features server-side Groq inference with optional Bring-Your-Own-Key OpenAI support, Server-Sent Events for real-time updates, comprehensive unit testing, and a modular FastAPI architecture designed for scalable autonomous browser automation.",
     "tech_stack": [
       "Python",
+      "LangGraph",
+      "Playwright",
+      "browser-use",
+      "FastAPI",
+      "Server-Sent Events",
+      "Groq LLM",
+      "OpenAI",
       "JavaScript",
       "HTML",
       "CSS",
-      "Playwright",
-      "FastAPI",
-      "WebSocket",
-      "Groq LLM"
+      "Chromium"
+    ]
+  },
+  {
+    "name": "Voice-Talk-to-Founder",
+    "url": "https://github.com/dv7453/Voice-Talk-to-Founder",
+    "summary": "Voice-Talk-to-Founder is a real-time conversational AI platform that enables website visitors to have natural voice conversations with a virtual company founder. Built on LiveKit Agents, it orchestrates speech recognition, LLM reasoning, speech synthesis, and synchronized frontend updates through RPC events, allowing the AI to dynamically present services, qualify leads, answer business questions, and capture structured customer information throughout the conversation. The platform combines low-latency voice interaction with real-time UI synchronization to deliver an AI-powered sales and discovery experience.",
+    "tech_stack": [
+      "Python",
+      "LiveKit Agents",
+      "Next.js",
+      "React",
+      "Deepgram",
+      "GPT-4.1",
+      "Cartesia",
+      "WebRTC",
+      "RPC",
+      "OpenAI",
+      "JavaScript"
     ]
   },
   {
@@ -31,14 +53,73 @@
     ]
   },
   {
+    "name": "EV-Charger-Anomaly-Detection",
+    "url": "https://github.com/dv7453/EV-Charger-Anomaly-Detection",
+    "summary": "EV Charger Anomaly Detection is a production-oriented machine learning pipeline that detects abnormal charging station behavior using a layered anomaly detection architecture. The system combines deterministic engineering rules, Isolation Forest anomaly detection, and LightGBM session-level risk scoring to identify operational failures while preventing data leakage through reproducible temporal validation. It provides reusable inference pipelines, feature engineering, threshold optimization, and comprehensive performance reporting for Network Operations Center workflows.",
+    "tech_stack": [
+      "Python",
+      "LightGBM",
+      "Isolation Forest",
+      "scikit-learn",
+      "pandas",
+      "NumPy",
+      "joblib",
+      "Jupyter Notebook"
+    ]
+  },
+  {
+    "name": "mumzworld-cs-triage",
+    "url": "https://github.com/dv7453/mumzworld-cs-triage",
+    "summary": "Mumzworld AI Email Triage is an intelligent customer support workflow that classifies bilingual customer emails by intent, urgency, and sentiment while generating policy-grounded draft responses. Designed for high-volume support operations, it incorporates structured schema validation, multilingual processing, confidence scoring, evaluation rubrics, and safety constraints to prevent unsafe automation for critical customer cases. The project also includes automated evaluation pipelines and production-oriented model routing strategies balancing latency, cost, and response quality.",
+    "tech_stack": [
+      "Python",
+      "Streamlit",
+      "Anthropic Claude",
+      "SQLite",
+      "pytest",
+      "Natural Language Processing",
+      "LLM",
+      "JSON Schema"
+    ]
+  },
+  {
     "name": "LLM-Data-Pipeline",
     "url": "https://github.com/dv7453/LLM-Data-Pipeline",
-    "summary": "A Python-based web data extraction pipeline designed to ingest clean, structured data for Large Language Models, tackling challenging sources like JavaScript-rendered dashboards, complex HTML tables, and visual charts. The pipeline features a DOM-first adaptive extraction strategy, utilizing headless browsers and direct HTTP fetching. It leverages a robust tech stack to deliver normalized, LLM-ready JSON output.",
+    "summary": "A Python-based web data extraction pipeline designed to ingest clean, structured data for Large Language Models, tackling challenging sources like JavaScript-rendered dashboards, complex HTML tables, and visual charts. The pipeline features a DOM-first adaptive extraction strategy, utilizing headless browsers and direct HTTP fetching to normalize heterogeneous web content into LLM-ready JSON datasets suitable for downstream AI applications.",
     "tech_stack": [
       "Python",
       "Playwright",
       "pandas",
       "HTTP"
+    ]
+  },
+  {
+    "name": "fair-split-ai",
+    "url": "https://github.com/dv7453/fair-split-ai",
+    "summary": "Fair Split AI is a receipt intelligence application that automatically extracts purchased items from receipt images and calculates fair expense sharing using AI-assisted receipt parsing and deterministic financial calculations. The system combines multimodal vision models with a rule-based arithmetic engine to accurately assign shared expenses while handling OCR fallbacks, ambiguous receipts, and AI failure scenarios. It exposes a FastAPI backend with an interactive frontend and comprehensive automated testing for reliable bill splitting.",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "Groq",
+      "Computer Vision",
+      "OCR",
+      "HTML",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "resource-allocation-engine",
+    "url": "https://github.com/dv7453/resource-allocation-engine",
+    "summary": "Resource Allocation Engine is a delivery fleet optimization platform that assigns trucks to delivery orders using both greedy heuristics and the Hungarian assignment algorithm. The application enables interactive comparison of routing strategies through map-based visualizations, synthetic workload generation, and performance metrics that highlight trade-offs between execution speed, delivery priority, and total travel distance. It provides a practical framework for exploring optimization algorithms in logistics systems.",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "React",
+      "SciPy",
+      "NumPy",
+      "Leaflet",
+      "OpenStreetMap",
+      "Vite"
     ]
   },
   {
@@ -57,24 +138,61 @@
     ]
   },
   {
-    "name": "PyDanic-ROASTMYSTARTUP",
-    "url": "https://github.com/dv7453/PyDanic-ROASTMYSTARTUP",
-    "summary": "PyDanic-ROASTMYSTARTUP appears to be a full-stack web application leveraging TypeScript, Python, and JavaScript for backend and frontend development, with Docker and Procfile indicating containerization and deployment capabilities. The project likely utilizes a microservices architecture, given the presence of multiple languages and a Procfile. It seems to be designed for scalability and ease of deployment.",
+    "name": "TWC_OMS",
+    "url": "https://github.com/dv7453/TWC_OMS",
+    "summary": "The Organization Management Service is a multi-tenant backend built with FastAPI and MongoDB, featuring async operations, JWT authentication, and dynamic collection management. It provides endpoints for organization creation, retrieval, update, and deletion, as well as admin login functionality. The service is designed to be scalable and secure, utilizing a tech stack that includes Python, Docker, and MongoDB.",
     "tech_stack": [
-      "TypeScript",
       "Python",
-      "JavaScript",
-      "CSS",
       "Docker",
-      "Procfile"
+      "FastAPI",
+      "MongoDB",
+      "Pydantic",
+      "Uvicorn",
+      "pytest",
+      "httpx",
+      "python-jose",
+      "passlib"
     ]
   },
   {
-    "name": "Natural_language_query",
-    "url": "https://github.com/dv7453/Natural_language_query",
-    "summary": "Natural language query processing is enabled through JavaScript, facilitating user-friendly interactions with data. The system likely interprets and executes queries based on natural language inputs, providing an intuitive interface for information retrieval. Key functionality includes parsing and understanding natural language queries to generate relevant results.",
+    "name": "fake-Job-Chrome-extension",
+    "url": "https://github.com/dv7453/fake-Job-Chrome-extension",
+    "summary": "The Fake Job Detector Chrome Extension leverages AI, ML, and NLP to detect deceptive job listings on Naukri.com, providing users with real-time risk scores, alerts, and transparency. It features a robust tech stack, including a React.js frontend, Flask/FastAPI backend, and ML/NLP models like Random Forest, SVM, and BERT. The extension empowers users with crowdsourced feedback, adaptive learning, and anomaly detection.",
     "tech_stack": [
-      "JavaScript"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Flask",
+      "FastAPI",
+      "Python",
+      "Scikit-learn",
+      "TensorFlow",
+      "BERT",
+      "Word2Vec",
+      "FastText",
+      "TF-IDF",
+      "Pandas",
+      "NumPy",
+      "BeautifulSoup",
+      "Selenium",
+      "MongoDB",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "VentureGPT",
+    "url": "https://github.com/dv7453/VentureGPT",
+    "summary": "VentureGPT generates comprehensive reports for startup ideas, providing legal, economic, and business structure analyses. It utilizes a multi-agent approach, where each agent processes user input to produce a specific analysis, which is then compiled into a comprehensive report. The project also features a chat interface, allowing users to ask questions about the report and receive answers generated by a conversational AI model.",
+    "tech_stack": [
+      "Python",
+      "Streamlit",
+      "Langchain",
+      "Groq",
+      "OpenAI",
+      "YAML",
+      "Dotenv",
+      "JSON"
     ]
   },
   {
@@ -104,38 +222,6 @@
     ]
   },
   {
-    "name": "TWC_OMS",
-    "url": "https://github.com/dv7453/TWC_OMS",
-    "summary": "The Organization Management Service is a multi-tenant backend built with FastAPI and MongoDB, featuring async operations, JWT authentication, and dynamic collection management. It provides endpoints for organization creation, retrieval, update, and deletion, as well as admin login functionality. The service is designed to be scalable and secure, utilizing a tech stack that includes Python, Docker, and MongoDB.",
-    "tech_stack": [
-      "Python",
-      "Docker",
-      "FastAPI",
-      "MongoDB",
-      "Pydantic",
-      "Uvicorn",
-      "pytest",
-      "httpx",
-      "python-jose",
-      "passlib"
-    ]
-  },
-  {
-    "name": "VentureGPT",
-    "url": "https://github.com/dv7453/VentureGPT",
-    "summary": "VentureGPT generates comprehensive reports for startup ideas, providing legal, economic, and business structure analyses. It utilizes a multi-agent approach, where each agent processes user input to produce a specific analysis, which is then compiled into a comprehensive report. The project also features a chat interface, allowing users to ask questions about the report and receive answers generated by a conversational AI model.",
-    "tech_stack": [
-      "Python",
-      "Streamlit",
-      "Langchain",
-      "Groq",
-      "OpenAI",
-      "YAML",
-      "Dotenv",
-      "JSON"
-    ]
-  },
-  {
     "name": "rust-log-analyzer",
     "url": "https://github.com/dv7453/rust-log-analyzer",
     "summary": "The rust-log-analyzer is a lightweight command-line tool that efficiently processes log files, parsing standard log lines, extracting severity levels, and allowing filtering and searching capabilities. Built with Rust, it leverages streaming to handle large files with a minimal footprint. Its key features include log level extraction, occurrence counting, and keyword searching.",
@@ -152,44 +238,6 @@
       "Python",
       "trimesh",
       "open3d"
-    ]
-  },
-  {
-    "name": "drop2ml-",
-    "url": "https://github.com/dv7453/drop2ml-",
-    "summary": "Drop2ml enables users to train machine learning models by simply dragging and dropping datasets, streamlining the model development process. Key functionality includes automated data preprocessing and model selection. The project aims to simplify machine learning workflows for non-technical users.",
-    "tech_stack": [
-      "Python",
-      "scikit-learn",
-      "Pandas",
-      "TensorFlow",
-      "Flask"
-    ]
-  },
-  {
-    "name": "fake-Job-Chrome-extension",
-    "url": "https://github.com/dv7453/fake-Job-Chrome-extension",
-    "summary": "The Fake Job Detector Chrome Extension leverages AI, ML, and NLP to detect deceptive job listings on Naukri.com, providing users with real-time risk scores, alerts, and transparency. It features a robust tech stack, including a React.js frontend, Flask/FastAPI backend, and ML/NLP models like Random Forest, SVM, and BERT. The extension empowers users with crowdsourced feedback, adaptive learning, and anomaly detection.",
-    "tech_stack": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.js",
-      "Flask",
-      "FastAPI",
-      "Python",
-      "Scikit-learn",
-      "TensorFlow",
-      "BERT",
-      "Word2Vec",
-      "FastText",
-      "TF-IDF",
-      "Pandas",
-      "NumPy",
-      "BeautifulSoup",
-      "Selenium",
-      "MongoDB",
-      "PostgreSQL"
     ]
   },
   {
@@ -235,6 +283,19 @@
     ]
   },
   {
+    "name": "PyDanic-ROASTMYSTARTUP",
+    "url": "https://github.com/dv7453/PyDanic-ROASTMYSTARTUP",
+    "summary": "PyDanic-ROASTMYSTARTUP appears to be a full-stack web application leveraging TypeScript, Python, and JavaScript for backend and frontend development, with Docker and Procfile indicating containerization and deployment capabilities. The project likely utilizes a microservices architecture, given the presence of multiple languages and a Procfile. It seems to be designed for scalability and ease of deployment.",
+    "tech_stack": [
+      "TypeScript",
+      "Python",
+      "JavaScript",
+      "CSS",
+      "Docker",
+      "Procfile"
+    ]
+  },
+  {
     "name": "Narrative-Transformer",
     "url": "https://github.com/dv7453/Narrative-Transformer",
     "summary": "Transforming classic narratives into new settings, the Narrative-Transformer pipeline preserves structural and thematic integrity using a Python-based stack. It features narrative invariant extraction, character values vs world constraints mapping, and failure modes as narrative pressure. The pipeline executes a linear flow from input parsing to narrative generation, ensuring dramatic tension and consistency.",
@@ -254,11 +315,25 @@
     ]
   },
   {
-    "name": "Active_Crash_Detection_and_Alarming_System_main",
-    "url": "https://github.com/dv7453/Active_Crash_Detection_and_Alarming_System_main",
-    "summary": "Active Crash Detection and Alarming System enhances vehicular safety by detecting potential collisions and alerting drivers and emergency services in real-time, featuring real-time crash detection, emergency notification, and data logging. Built with Python, the system provides a scalable and reliable safety mechanism for vehicles. It integrates multiple sensors and offers a user-friendly dashboard for configuration and monitoring.",
+    "name": "ISRO-IEEE-GRS-Hackathon",
+    "url": "https://github.com/dv7453/ISRO-IEEE-GRS-Hackathon",
+    "summary": "Developing AI models for remote sensing using AWS SageMaker, leveraging Jupyter Notebook for data-driven insights and TerraTorch for foundation models. The project features a comprehensive guide for setup, training, and evaluation, utilizing a dataset and workshop for participant training. It showcases expertise in cloud-based AI application development and remote sensing.",
     "tech_stack": [
-      "Python"
+      "Jupyter Notebook",
+      "AWS SageMaker",
+      "TerraTorch",
+      "Python",
+      "albumentations",
+      "ffmpeg"
+    ]
+  },
+  {
+    "name": "Semantic_Segmention_with_Pytorch",
+    "url": "https://github.com/dv7453/Semantic_Segmention_with_Pytorch",
+    "summary": "Semantic segmentation is achieved through a PyTorch implementation, utilizing a U-Net architecture for pixel-level image classification. The project features data preprocessing, model architecture design, and loss function implementation for accurate segmentation. It leverages PyTorch for deep learning tasks, focusing on computer vision applications.",
+    "tech_stack": [
+      "PyTorch",
+      "Jupyter Notebook"
     ]
   },
   {
@@ -285,25 +360,31 @@
     ]
   },
   {
-    "name": "Semantic_Segmention_with_Pytorch",
-    "url": "https://github.com/dv7453/Semantic_Segmention_with_Pytorch",
-    "summary": "Semantic segmentation is achieved through a PyTorch implementation, utilizing a U-Net architecture for pixel-level image classification. The project features data preprocessing, model architecture design, and loss function implementation for accurate segmentation. It leverages PyTorch for deep learning tasks, focusing on computer vision applications.",
+    "name": "Active_Crash_Detection_and_Alarming_System_main",
+    "url": "https://github.com/dv7453/Active_Crash_Detection_and_Alarming_System_main",
+    "summary": "Active Crash Detection and Alarming System enhances vehicular safety by detecting potential collisions and alerting drivers and emergency services in real-time, featuring real-time crash detection, emergency notification, and data logging. Built with Python, the system provides a scalable and reliable safety mechanism for vehicles. It integrates multiple sensors and offers a user-friendly dashboard for configuration and monitoring.",
     "tech_stack": [
-      "PyTorch",
-      "Jupyter Notebook"
+      "Python"
     ]
   },
   {
-    "name": "ISRO-IEEE-GRS-Hackathon",
-    "url": "https://github.com/dv7453/ISRO-IEEE-GRS-Hackathon",
-    "summary": "Developing AI models for remote sensing using AWS SageMaker, leveraging Jupyter Notebook for data-driven insights and TerraTorch for foundation models. The project features a comprehensive guide for setup, training, and evaluation, utilizing a dataset and workshop for participant training. It showcases expertise in cloud-based AI application development and remote sensing.",
+    "name": "drop2ml-",
+    "url": "https://github.com/dv7453/drop2ml-",
+    "summary": "Drop2ml enables users to train machine learning models by simply dragging and dropping datasets, streamlining the model development process. Key functionality includes automated data preprocessing and model selection. The project aims to simplify machine learning workflows for non-technical users.",
     "tech_stack": [
-      "Jupyter Notebook",
-      "AWS SageMaker",
-      "TerraTorch",
       "Python",
-      "albumentations",
-      "ffmpeg"
+      "scikit-learn",
+      "Pandas",
+      "TensorFlow",
+      "Flask"
+    ]
+  },
+  {
+    "name": "Natural_language_query",
+    "url": "https://github.com/dv7453/Natural_language_query",
+    "summary": "Natural language query processing is enabled through JavaScript, facilitating user-friendly interactions with data. The system likely interprets and executes queries based on natural language inputs, providing an intuitive interface for information retrieval. Key functionality includes parsing and understanding natural language queries to generate relevant results.",
+    "tech_stack": [
+      "JavaScript"
     ]
   }
 ]

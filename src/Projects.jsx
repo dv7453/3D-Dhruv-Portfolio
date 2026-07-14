@@ -4,23 +4,23 @@ const FEATURED = [
     {
         name: 'OrchestrAI',
         url: 'https://github.com/dv7453/OrchestrAI',
-        brief: 'Multi-agent browser automation powered by LangGraph and Computer Vision.',
-        tags: ['Python', 'Playwright', 'FastAPI', 'LangGraph', 'Groq LLM'],
+        brief: 'AI-powered browser automation converting natural language into reliable web workflows via a 15-node LangGraph state machine.',
+        tags: ['Python', 'LangGraph', 'Playwright', 'FastAPI', 'Groq LLM'],
         accent: '#7c3aed',
+    },
+    {
+        name: 'Voice-Talk-to-Founder',
+        url: 'https://github.com/dv7453/Voice-Talk-to-Founder',
+        brief: 'Real-time conversational AI platform for natural voice conversations with a virtual founder, built on LiveKit Agents and WebRTC.',
+        tags: ['Python', 'LiveKit Agents', 'Next.js', 'WebRTC', 'GPT-4.1'],
+        accent: '#f59e0b',
     },
     {
         name: 'SpeechEval-AI',
         url: 'https://github.com/dv7453/SpeechEval-AI',
-        brief: 'EdTech platform evaluating speech with a hybrid Whisper + LLM architecture.',
+        brief: 'EdTech platform evaluating speech across pronunciation, fluency, confidence & accuracy with a hybrid Whisper + LLM architecture.',
         tags: ['Python', 'TypeScript', 'Whisper', 'LLM', 'Docker'],
         accent: '#06b6d4',
-    },
-    {
-        name: 'LLM-Data-Pipeline',
-        url: 'https://github.com/dv7453/LLM-Data-Pipeline',
-        brief: 'Web data extraction pipeline that outputs clean, LLM-ready structured JSON.',
-        tags: ['Python', 'Playwright', 'pandas', 'HTTP'],
-        accent: '#f59e0b',
     },
 ];
 
