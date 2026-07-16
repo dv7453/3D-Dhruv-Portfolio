@@ -1,17 +1,19 @@
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import projectsData from '../dv7453_portfolio_data.json';
 
-const FEATURED = ['OrchestrAI', 'Voice-Talk-to-Founder', 'SpeechEval-AI'];
+const FEATURED = ['OrchestrAI', 'Voice-Talk-to-Founder', 'SpeechEval-AI', 'Infyro'];
 
 // Build unique category tags from all projects
 const ALL_CATEGORIES = [
     { label: 'All', value: 'all' },
-    { label: 'AI / ML', value: 'ai', match: ['LLM', 'Groq', 'LangChain', 'Langchain', 'Transformers', 'Large Language Models', 'Whisper', 'BERT', 'Word2Vec', 'FastText', 'CNN', 'Convolutional Neural Network (CNN)'] },
+    { label: 'AI / ML', value: 'ai', match: ['LLM', 'Groq', 'LangChain', 'Langchain', 'Transformers', 'Large Language Models', 'Whisper', 'BERT', 'Word2Vec', 'FastText', 'CNN', 'Convolutional Neural Network (CNN)', 'MCP', 'Hermes', 'OpenClaw'] },
     { label: 'Deep Learning', value: 'dl', match: ['TensorFlow', 'PyTorch', 'Keras', 'CNN', 'Convolutional Neural Network (CNN)', 'SentencePiece'] },
     { label: 'Backend', value: 'backend', match: ['FastAPI', 'Flask', 'Node.js', 'Uvicorn', 'MongoDB', 'PostgreSQL', 'Docker'] },
     { label: 'Frontend', value: 'frontend', match: ['React', 'React.js', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn-ui', 'Radix UI', 'three.js'] },
     { label: 'Data', value: 'data', match: ['pandas', 'Pandas', 'numpy', 'NumPy', 'Jupyter Notebook', 'scikit-learn', 'Scikit-learn', 'Graphviz', 'LightGBM', 'Isolation Forest', 'joblib'] },
     { label: 'Rust', value: 'rust', match: ['Rust', 'Cargo'] },
+    { label: 'OpenClaw', value: 'openclaw', match: ['OpenClaw'] },
+    { label: 'Hermes', value: 'hermes', match: ['Hermes'] },
 ];
 
 const CATEGORY_COLORS = {
@@ -22,6 +24,8 @@ const CATEGORY_COLORS = {
     frontend: '#ec4899',
     data: '#10b981',
     rust: '#f97316',
+    openclaw: '#0ea5e9',
+    hermes: '#14b8a6',
 };
 
 export default function ProjectsPage({ onBack }) {

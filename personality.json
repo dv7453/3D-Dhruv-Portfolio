@@ -73,6 +73,23 @@
                     "Implemented Whisper-based audio analysis with statistical scoring (trimmed mean, MAD, pacing, fillers).",
                     "Built an LLM-powered feedback engine generating structured, actionable insights from speech transcripts."
                 ]
+            },
+            {
+                "name": "Infyro",
+                "description": "Personal AI Agents Platform (Hermes + OpenClaw)",
+                "tech_stack": [
+                    "Python",
+                    "FastAPI",
+                    "React",
+                    "Hermes",
+                    "OpenClaw",
+                    "MCP"
+                ],
+                "details": [
+                    "Built Infyro so users can create personal AI agents, customise persona/model/temperature/tools, and connect them to Telegram and other channels without owning infrastructure.",
+                    "Implemented Hermes as the channel runtime (Telegram chat, memory, alert delivery) and OpenClaw as the background worker for tool-driven jobs and live market checks.",
+                    "Designed FastAPI auth/agents/settings plus MCP tools for live data and real actions (markets demo niche, broader agent/channel/tool direction)."
+                ]
             }
         ],
         "technical_skills": {

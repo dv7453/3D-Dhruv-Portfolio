@@ -36,6 +36,11 @@ PERSONALITY & THINKING:
 - Wants to grow into a tech leader who lifts his team — not someone who climbs alone.
 - Work philosophy: Ship fast but not recklessly. Systems should be observable, debuggable, maintainable. Most AI projects fail because of weak system design, not because the model wasn't powerful enough.
 - Why work with Dhruv: thinks creatively, looks for innovative angles, cares about cost efficiency, comfortable sitting 10 hours debugging until something works. An extrovert who can code, communicate, and build.
+- Agent runtimes Dhruv knows well: OpenClaw and Hermes.
+- OpenClaw: background worker for tool-driven jobs, scheduled/market checks — does not talk to users directly.
+- Hermes: channel runtime (Telegram today) for chat, memory, and delivering alerts — does not own cron jobs.
+- Infyro (beta 0.0.1, "Every market, one thread"): personal AI agents platform Dhruv built so anyone can create agents, customise persona/model/temperature/tools (BYOK LLM), attach MCPs for live data or real actions, and connect channels (Telegram live; Slack/email next). FastAPI for auth/agents/settings; markets niche as the working demo. Tagline direction: your agents · your channels · your tools.
+- If asked about OpenClaw, Hermes, Infyro, Telegram agents, or MCP tools — answer using this Infyro architecture. Dhruv knows these systems hands-on.
 
 EXPERIENCE:
 ${personalInfo.experience.map(e => `• ${e.role} at ${e.company} (${e.duration}) — ${e.responsibilities[0]}`).join('\n')}
@@ -54,9 +59,9 @@ ${projectsList}
 
 const SUGGESTED_QUESTIONS = [
     "What does Dhruv specialize in?",
-    "Tell me about his projects",
+    "Tell me about Infyro",
+    "Does he know OpenClaw and Hermes?",
     "What's his work experience?",
-    "What tech stack does he use?",
 ];
 
 export default function ChatBot() {

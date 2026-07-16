@@ -53,6 +53,24 @@
     ]
   },
   {
+    "name": "Infyro",
+    "url": "https://github.com/dv7453/infyro",
+    "summary": "Infyro — Every market, one thread. A personal AI agents platform (beta 0.0.1) for anyone who wants agents without building infrastructure. Create an agent, customise persona/model/temperature/tools, connect channels (Telegram live; Slack/email next), and talk to it where you already live. Agents fetch live data or trigger real actions through tools/MCPs. Architecture: Hermes channel runtime (Telegram chat, memory, alerts), OpenClaw worker (background checks / tool-driven jobs), FastAPI (auth, agents, settings, catalog), and MCP tools for markets demo. Product direction: your agents · your channels · your tools.",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "React",
+      "Vite",
+      "PostgreSQL",
+      "Telegram",
+      "Hermes",
+      "OpenClaw",
+      "MCP",
+      "LLM",
+      "Docker"
+    ]
+  },
+  {
     "name": "EV-Charger-Anomaly-Detection",
     "url": "https://github.com/dv7453/EV-Charger-Anomaly-Detection",
     "summary": "EV Charger Anomaly Detection is a production-oriented machine learning pipeline that detects abnormal charging station behavior using a layered anomaly detection architecture. The system combines deterministic engineering rules, Isolation Forest anomaly detection, and LightGBM session-level risk scoring to identify operational failures while preventing data leakage through reproducible temporal validation. It provides reusable inference pipelines, feature engineering, threshold optimization, and comprehensive performance reporting for Network Operations Center workflows.",
