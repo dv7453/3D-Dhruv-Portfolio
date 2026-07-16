@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import projectsData from '../dv7453_portfolio_data.json';
 
-const FEATURED = ['OrchestrAI', 'Voice-Talk-to-Founder', 'SpeechEval-AI', 'Infyro'];
+const FEATURED = ['OrchestrAI', 'Voice-Talk-to-Founder', 'SpeechEval-AI'];
 
 // Build unique category tags from all projects
 const ALL_CATEGORIES = [
