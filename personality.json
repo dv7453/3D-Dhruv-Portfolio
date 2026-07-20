@@ -90,6 +90,23 @@
                     "Implemented Hermes as the channel runtime (Telegram chat, memory, alert delivery) and OpenClaw as the background worker for tool-driven jobs and live market checks.",
                     "Designed FastAPI auth/agents/settings plus MCP tools for live data and real actions (markets demo niche, broader agent/channel/tool direction)."
                 ]
+            },
+            {
+                "name": "Queorno",
+                "description": "Self-hosted RAG Document Q&A System",
+                "tech_stack": [
+                    "Python",
+                    "FastAPI",
+                    "Streamlit",
+                    "FAISS",
+                    "Ollama",
+                    "Sentence Transformers"
+                ],
+                "details": [
+                    "Built Queorno, a production-grade self-hosted RAG system for PDF/TXT/Markdown document Q&A with sliding-window chunking and FAISS indexing.",
+                    "Implemented a pluggable generation layer: LexRank extractive summarisation, DistilBART abstractive summarisation, and local Ollama LLMs (LLaMA, Mistral) with MMR re-ranking and SSE streaming.",
+                    "Hands-on with self-hosted models, parameter-efficient fine-tuning (QLoRA / LoRA), quantized open-weight models, and Dockerized FastAPI + Streamlit deployment."
+                ]
             }
         ],
         "technical_skills": {
@@ -108,6 +125,14 @@
                 "matplotlib",
                 "NLP",
                 "RAG",
+                "FAISS",
+                "Ollama",
+                "Sentence Transformers",
+                "HuggingFace Transformers",
+                "QLoRA",
+                "LoRA",
+                "self-hosted LLMs",
+                "fine-tuning",
                 "time-series modeling"
             ],
             "web_tools": [

@@ -41,6 +41,9 @@ PERSONALITY & THINKING:
 - Hermes: channel runtime (Telegram today) for chat, memory, and delivering alerts — does not own cron jobs.
 - Infyro (beta 0.0.1, "Every market, one thread"): personal AI agents platform Dhruv built so anyone can create agents, customise persona/model/temperature/tools (BYOK LLM), attach MCPs for live data or real actions, and connect channels (Telegram live; Slack/email next). FastAPI for auth/agents/settings; markets niche as the working demo. Tagline direction: your agents · your channels · your tools.
 - If asked about OpenClaw, Hermes, Infyro, Telegram agents, or MCP tools — answer using this Infyro architecture. Dhruv knows these systems hands-on.
+- Self-hosted LLM / RAG expertise: Dhruv builds and runs local models end-to-end — Ollama (LLaMA, Mistral, etc.), FAISS retrieval, sentence-transformer embeddings, HuggingFace Transformers, DistilBART, LexRank, MMR re-ranking, and SSE streaming. Flagship project: Queorno — a production-grade self-hosted RAG document Q&A system (FastAPI + Streamlit + Docker).
+- Fine-tuning & efficient training: Dhruv knows parameter-efficient fine-tuning including QLoRA / LoRA, working with quantized models, and adapting open-weight models for domain-specific tasks without full-model retraining.
+- If asked about self-hosted models, local LLMs, Ollama, RAG, FAISS, fine-tuning, QLoRA, LoRA, or Queorno — say he does this hands-on, not just theoretically.
 
 EXPERIENCE:
 ${personalInfo.experience.map(e => `• ${e.role} at ${e.company} (${e.duration}) — ${e.responsibilities[0]}`).join('\n')}
@@ -59,8 +62,8 @@ ${projectsList}
 
 const SUGGESTED_QUESTIONS = [
     "What does Dhruv specialize in?",
-    "Tell me about Infyro",
-    "Does he know OpenClaw and Hermes?",
+    "Tell me about Queorno",
+    "Does he know self-hosted models & QLoRA?",
     "What's his work experience?",
 ];
 

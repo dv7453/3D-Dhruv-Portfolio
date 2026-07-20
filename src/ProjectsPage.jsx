@@ -6,7 +6,7 @@ const FEATURED = ['OrchestrAI', 'Voice-Talk-to-Founder', 'SpeechEval-AI'];
 // Build unique category tags from all projects
 const ALL_CATEGORIES = [
     { label: 'All', value: 'all' },
-    { label: 'AI / ML', value: 'ai', match: ['LLM', 'Groq', 'LangChain', 'Langchain', 'Transformers', 'Large Language Models', 'Whisper', 'BERT', 'Word2Vec', 'FastText', 'CNN', 'Convolutional Neural Network (CNN)', 'MCP', 'Hermes', 'OpenClaw'] },
+    { label: 'AI / ML', value: 'ai', match: ['LLM', 'Groq', 'LangChain', 'Langchain', 'Transformers', 'Large Language Models', 'Whisper', 'BERT', 'Word2Vec', 'FastText', 'CNN', 'Convolutional Neural Network (CNN)', 'MCP', 'Hermes', 'OpenClaw', 'FAISS', 'Ollama', 'Sentence Transformers', 'HuggingFace Transformers', 'LexRank', 'DistilBART'] },
     { label: 'Deep Learning', value: 'dl', match: ['TensorFlow', 'PyTorch', 'Keras', 'CNN', 'Convolutional Neural Network (CNN)', 'SentencePiece'] },
     { label: 'Backend', value: 'backend', match: ['FastAPI', 'Flask', 'Node.js', 'Uvicorn', 'MongoDB', 'PostgreSQL', 'Docker'] },
     { label: 'Frontend', value: 'frontend', match: ['React', 'React.js', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn-ui', 'Radix UI', 'three.js'] },
