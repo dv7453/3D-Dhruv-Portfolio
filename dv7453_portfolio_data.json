@@ -86,6 +86,34 @@
     ]
   },
   {
+  "name": "Queorno_RAG-Analysis-and-self-hosted-QnA-system",
+  "url": "https://github.com/dv7453/Queorno_RAG-Analysis-and-self-hosted-QnA-system",
+  "summary": "Queorno is a production-grade, self-hosted Retrieval-Augmented Generation (RAG) system for intelligent document Q&A. Users upload PDF, TXT, or Markdown files, which are chunked with sliding-window segmentation and indexed in FAISS using sentence-transformer embeddings. Queries are answered through a pluggable generation layer supporting LexRank extractive summarisation, DistilBART abstractive summarisation, and local Ollama LLMs (LLaMA, Mistral, etc.), with optional MMR re-ranking for broader topic coverage and SSE streaming for token-by-token responses. The system pairs a FastAPI backend with a Streamlit frontend, Dockerized deployment with health checks, and a pytest suite covering API, retrieval, and generation paths.",
+  "tech_stack": [
+    "Python",
+    "FastAPI",
+    "Streamlit",
+    "FAISS",
+    "Sentence Transformers",
+    "Ollama",
+    "LexRank",
+    "DistilBART",
+    "HuggingFace Transformers",
+    "PyTorch",
+    "Pydantic",
+    "Server-Sent Events",
+    "Docker",
+    "pytest",
+    "httpx",
+    "pypdf",
+    "NumPy",
+    "pandas",
+    "matplotlib",
+    "structlog",
+    "Uvicorn"
+    ]
+  },
+  {
     "name": "mumzworld-cs-triage",
     "url": "https://github.com/dv7453/mumzworld-cs-triage",
     "summary": "Mumzworld AI Email Triage is an intelligent customer support workflow that classifies bilingual customer emails by intent, urgency, and sentiment while generating policy-grounded draft responses. Designed for high-volume support operations, it incorporates structured schema validation, multilingual processing, confidence scoring, evaluation rubrics, and safety constraints to prevent unsafe automation for critical customer cases. The project also includes automated evaluation pipelines and production-oriented model routing strategies balancing latency, cost, and response quality.",
